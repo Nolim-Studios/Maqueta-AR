@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="http://nolimstudios.com/wp-content/uploads/2022/09/The-Nolim-Coin-Icon.png"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Demo Arquitectura - Nolim Studios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="relative w-full">
+      <div class="relative">
+        <div
+          class="w-full min-h-screen flex flex-col sm:justify-center items-center pt-4 sm:pt-0 custom-bg"
+        >
+          <div class="w-full sm:max-w-md p-5 mx-auto">
+            <div class="justify-center row">
+              <div class="w-full">
+                <div
+                  class="pt-32 mb-12 text-center lg:pt-10 header-hero-content"
+                >
+                  <h1 class="text-4xl font-bold text-white uppercase">
+                    Una nueva forma de presentar las ideas
+                  </h1>
+
+                  <p class="mt-8 text-gray-200">
+                    Apreciamos la arquitectura y el diseño, tanto que nos
+                    preocupamos por la forma en la que se presentan. Disfrutamos
+                    ayudar a nuestros clientes a convertir en realidad las casas
+                    de sus sueños y los proyectos en desarrollo.
+                    <a
+                      href="http://nolimstudios.com/contact-us"
+                      class="text-gray-100"
+                      >¿Quieres ver más? <strong>Click aquí</strong></a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="justify-center row">
+              <center>
+                <model-viewer
+                  class="-mt-12"
+                  alt="Un modelo 3D de una hamburguesa"
+                  src="./assets/maqueta.glb"
+                  autoplay
+                  ar
+                  ar-modes="webxr scene-viewer quick-look"
+                  shadow-intensity="1"
+                  camera-controls
+                ></model-viewer>
+              </center>
+            </div>
+          </div>
+          <div class="p-4 justify-center">
+            <button
+              href="http://nolimstudios.com"
+              class="w-full p-4 font-bold text-white uppercase custom-button"
+            >
+              Ir al Sitio Web
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
